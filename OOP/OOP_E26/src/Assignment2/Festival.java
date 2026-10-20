@@ -39,10 +39,11 @@ public class Festival {
             case 'L':
                 shift = new TeamLeadersShift(hours, task, festivalVolunteers[volunteer].getFestivalsBefore());
                 break;
+            default:
+                throw new IllegalArgumentException("Unknown shift type: " + type);
         }
-        assert shift != null;
-        earned = shift.calculatePoints();
-        festivalVolunteers[volunteer].workedShift(shift);
+
+        earned = festivalVolunteers[volunteer].workedShift(shift);
 
         System.out.println("  " + festivalVolunteers[volunteer].getName() + " worked " + hours + " h, " + task + ": "
                 + earned + " points (" + shift.pointPerShift() + ")");

@@ -22,15 +22,13 @@ public class Volunteer {
         return festivalsBefore;
     }
 
-    public void workedShift(Shift shift ){
-        changePoints(shift.calculatePoints());
+    public int workedShift(Shift shift ){
+        int earned = shift.calculatePoints();
+        changePoints(earned);
+        return earned;
     }
 
     private void changePoints( int earned ) {
         this.points = points + earned;
-    }
-
-    public void changeFestivalsBefore(int recent) {
-        this.festivalsBefore = festivalsBefore + recent;
     }
 }

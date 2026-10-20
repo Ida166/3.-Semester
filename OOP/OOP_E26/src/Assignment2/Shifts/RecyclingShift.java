@@ -11,7 +11,7 @@ public class RecyclingShift extends Shift {
 
     @Override
     public int calculatePoints() {
-        return hours + bags;
+        return getHours() + bags;
     }
 
     @Override

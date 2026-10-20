@@ -8,7 +8,7 @@ public class BarShift extends Shift{
 
     @Override
     public int calculatePoints() {
-        return hours;
+        return getHours();
     }
 
     @Override

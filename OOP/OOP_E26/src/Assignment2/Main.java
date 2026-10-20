@@ -48,7 +48,7 @@ public class Main {
         // Task 4. Day 3, the team leaders. Exercise 4.
         // FestivalVolunteers does not have this task. Exercise 4 in README.md describes it.
         System.out.println("Task 4. Day 3, the team leaders");
-        festival.addShift('L', 0, 8, "Bar Leader Shift", 0);
+        festival.addShift('L', 0, 8, "Bar team leader", 0);
         festival.addShift('L', 1, 4, "Recycling team leader", 0);
         festival.printPoints();
     }

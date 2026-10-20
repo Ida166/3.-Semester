@@ -13,10 +13,10 @@ public class TeamLeadersShift extends Shift{
     public int calculatePoints() {
 
         if(festivalsBefore >= 3){
-            return hours * 3;
+            return getHours() * 3;
         }
         else{
-            return hours * 2;
+            return getHours() * 2;
         }
     }
 
