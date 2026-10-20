@@ -1,6 +1,6 @@
 package Assignment2.Shifts;
 
-public abstract class TeamLeadersShift extends Shift{
+public class TeamLeadersShift extends Shift{
 
     int festivalsBefore;
 
@@ -25,6 +25,4 @@ public abstract class TeamLeadersShift extends Shift{
         return "2 per hour, 3 after 3 festivals";
     }
 
-
-    public abstract String getRuleName();
 }

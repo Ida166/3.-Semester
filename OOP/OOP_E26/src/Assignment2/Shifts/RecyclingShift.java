@@ -19,9 +19,4 @@ public class RecyclingShift extends Shift {
         return "1 per hour and 1 per bag";
     }
 
-    @Override
-    public String getRuleName() {
-        return "Recyceling Shift";
-    }
-
 }

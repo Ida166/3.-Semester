@@ -15,9 +15,4 @@ public class BarShift extends Shift{
     public String pointPerShift(){
         return "1 per hour";
     }
-
-    @Override
-    public String getRuleName(){
-        return "Bar Shift";
-    }
 }

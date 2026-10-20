@@ -36,4 +36,12 @@ Question 4
 Which classes did the leader shift make you write or change, and why? To add it to
 FestivalVolunteers.java instead, which methods would you change, and would anything warn
 you if you forgot one?
--
+- To add leader shifts, I created TeamLeadersShift as a subclass of Shift. It stores the
+number of festivals attended before this festival and implements the leader shift's point
+calculation. I also changed Festival.addShift() to create the leader shift, and updated the
+shift description and point rule output.
+
+- In the original FestivalVolunteers version, I would change addShift() to handle the new
+shift type and ruleName() to describe its points rule. If I forgot to add a case to the
+switch, Java would not necessarily warn me at compile time. The program could instead calculate
+zero points or print ?.

@@ -14,8 +14,6 @@ public abstract class Shift {
 
     public abstract int calculatePoints();
 
-    public abstract String getRuleName();
-
     public abstract String pointPerShift();
 
 }

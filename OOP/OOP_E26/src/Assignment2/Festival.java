@@ -37,10 +37,8 @@ public class Festival {
                 shift = new RecyclingShift(hours, task, bags);
                 break;
             case 'L':
-                shift = new TeamLeaderBarShift(hours, task, festivalVolunteers[volunteer].getFestivalsBefore());
+                shift = new TeamLeadersShift(hours, task, festivalVolunteers[volunteer].getFestivalsBefore());
                 break;
-            case 'C':
-                shift = new TeamLeaderRecycleShift(hours, task, festivalVolunteers[volunteer].getFestivalsBefore());
         }
         assert shift != null;
         earned = shift.calculatePoints();
