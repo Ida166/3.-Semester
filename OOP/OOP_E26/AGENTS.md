@@ -22,7 +22,7 @@ Always respond in English, the language of the course.
 
 1. Identify which exercise the student is working on from the open or
    mentioned files. Each session lives in one folder under `src/`.
-2. Read that session's `EXERCISE.yml`, `README.md` and `EXERCISES.md` before
+2. Read that session's `EXERCISE.yml`, `Assignment2` and `EXERCISES.md` before
    helping. `EXERCISE.yml` states the exercise's `status` (active or closed),
    its `type`, its objectives, which concepts are not yet introduced, and,
    under `done_when`, what a complete attempt at each exercise looks like.

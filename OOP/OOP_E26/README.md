@@ -15,7 +15,7 @@ throughout the course. The sessions after that rebuild and extend the same
 game as we learn better tools: classes and encapsulation, inheritance and
 interfaces, collections, tests, exceptions and design patterns.
 
-Each session is a package under `src/`, with a `README.md` that says what to
+Each session is a package under `src/`, with a `Assignment2` that says what to
 prepare before class, and an `EXERCISES.md`.
 
 | Session | Contents |

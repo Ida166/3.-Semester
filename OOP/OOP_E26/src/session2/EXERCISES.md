@@ -109,14 +109,13 @@ Discussion:
    Say in one sentence what a reference gives you that a board coordinate
    never could. (Session 1 promised this sentence a name: it is
    *identity*.)
-A reference keeps track of the same object (its identity) even when the object changes position on the board.
+   * A reference keeps track of the same object (its identity) even when the object changes position on the board.
 3. The ghost: the board has forgotten the captured queen, but your
    variable has not, and she still claims to stand on (0,3). Nobody told
    her. Decide what *should* happen to a captured piece's object, write
    it in one sentence, and keep it — deciding who is responsible for
    telling her is session 4's business.
-A captured piece should no longer be considered on the board, and its 
-object should no longer claim to stand on its old square.
+    * A captured piece should no longer be considered on the board, and its object should no longer claim to stand on its old square.
 
 
 ## Exercise 3 — the sabotage, and every other door
@@ -127,7 +126,7 @@ The saboteur lines are waiting in `main`, search for `EXERCISE 3`.
   your notes, next to your one-sentence answer from session 1, exercise 4.
   You wrote *"which parts should be able to write on the board"* — the
   word `private` is that sentence, enforced.
-"java: pieces has private access in session2.E_ChessGame.ChessBoard"
+  * "java: pieces has private access in session2.E_ChessGame.ChessBoard"
 - The array is locked. Now audit the rest: list every `public` and every
   `protected` member of `ChessBoard` and `ChessPiece`, and for each one
   ask: can it break the board's invariants — real squares, one piece per
@@ -255,16 +254,18 @@ needs the board — but `getBoard()` is public, and exercise 3 had you use
 it. So what does `printBoard` protect today?
 
 1. **The alternative**, in one sentence.
-    * Where should the print statement live?
+    * Keep drawing only in ChessBoard.print(), without ChessGame.printBoard().
 2. **What it makes better.**
-    * It adds security, so not everybody can acces the print method.
+    * It adds security, so not everybody can acces the print method. and removes unnessesary delegation
 3. **What it makes worse.** No alternative is free; if you cannot name
    the cost, you have not yet understood the design you are attacking.
-    * You now have to be verry specific about who can acces it.
+    * Callers must access the board through getBoard()
 4. **What you would have to touch** — classes and methods by name, in
    the same currency as the cost-of-change table.
+    * ChessGame.printBoard(), ChessBoard.print(), and getBoard()
 5. **Your verdict**: *change it*, *keep it*, or *not with what I know
    today*.
+    * Keep it 
 
 ### Q3 — whose business is `getSymbol()`?
 
@@ -273,6 +274,17 @@ particular board. The piece stores its type and color and derives the
 letter, and the only code that ever asks is `ChessBoard.print()`. Should
 the translation live with the drawing? Write what `print()` would look
 like if it did, and say what the piece loses.
+
+1. **The alternative**, in one sentence.
+    * Let ChessBoard.print() decide which symbol to display
+2. **What it makes better.**
+    * ChessPiece does not need to know how it is drawn
+3. **What it makes worse.** No alternative is free; if you cannot name
+   the cost, you have not yet understood the design you are attacking.
+4. **What you would have to touch** — classes and methods by name, in
+   the same currency as the cost-of-change table.
+5. **Your verdict**: *change it*, *keep it*, or *not with what I know
+   today*.
 
 ### Q4 — two places remember where the queen stands
 

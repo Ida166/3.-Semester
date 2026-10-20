@@ -27,26 +27,26 @@ public class Demo {
         // Coordinates are (row, col): see the numbers around the board.
         // Session 1 wrote movePiece(board, 7, 3, 4, 3). The board is gone
         // from the call: it is the game's own.
-        ChessPiece queen = game.getBoard().getPieceAt(7, 3);
-        ChessPiece rook1 = game.getBoard().getPieceAt(7, 0);
-        ChessPiece rook2 = game.getBoard().getPieceAt(7, 7);
+//        ChessPiece queen = game.getBoard().getPieceAt(7, 3);
+//        ChessPiece rook1 = game.getBoard().getPieceAt(7, 0);
+//        ChessPiece rook2 = game.getBoard().getPieceAt(7, 7);
+//
+//        game.movePiece(7, 3, 4, 3);   // White queen straight up: legal
+//        game.movePiece(0, 0, 2, 2);   // Black rook diagonally: illegal
+//        game.movePiece(7, 0, 7, 2);   // White rook onto its own bishop: illegal
+//        game.movePiece(4, 3, 0, 3);   // The white queen captures the black queen!
+//        game.movePiece(0, 4, 0, 3);   // ...and the black king takes revenge.
+//        game.movePiece(7, 5, 5, 3);   // White bishop: still nobody taught it. Exercise 1!
+//        queen.setRow(3);
+//
+//        System.out.println("Queen moved: " + queen.getMoveCount() + " times.");
+//        System.out.println("Queen row: " + queen.getRow());
+//        System.out.println("Queen col: " + queen.getCol());
+//        System.out.println("Piece at (0,3): " + game.getBoard().getPieceAt(0, 3).getSymbol());
+//        System.out.println("White rook 1 moved: " + rook1.getMoveCount() + " times.");
+//        System.out.println("White rook 2 moved: " + rook2.getMoveCount() + " times.");
 
-        game.movePiece(7, 3, 4, 3);   // White queen straight up: legal
-        game.movePiece(0, 0, 2, 2);   // Black rook diagonally: illegal
-        game.movePiece(7, 0, 7, 2);   // White rook onto its own bishop: illegal
-        game.movePiece(4, 3, 0, 3);   // The white queen captures the black queen!
-        game.movePiece(0, 4, 0, 3);   // ...and the black king takes revenge.
-        game.movePiece(7, 5, 5, 3);   // White bishop: still nobody taught it. Exercise 1!
-        queen.setRow(3);
-
-        System.out.println("Queen moved: " + queen.getMoveCount() + " times.");
-        System.out.println("Queen row: " + queen.getRow());
-        System.out.println("Queen col: " + queen.getCol());
-        System.out.println("Piece at (0,3): " + game.getBoard().getPieceAt(0, 3).getSymbol());
-        System.out.println("White rook 1 moved: " + rook1.getMoveCount() + " times.");
-        System.out.println("White rook 2 moved: " + rook2.getMoveCount() + " times.");
-
-        game.printBoard();
+//        game.printBoard();
 
         // --- EXERCISE 3: the sabotage, revisited --------------------------
         // Session 1's saboteur wrote straight onto the array:
@@ -61,7 +61,7 @@ public class Demo {
         // That is your one-sentence answer from session 1, exercise 4,
         // enforced by the compiler. Whether EVERY door is as well guarded
         // is another question — EXERCISES.md, exercise 3.
-        game.getBoard().placePiece(4, 4, new ChessPiece('Q'));
+//        game.getBoard().placePiece(4, 4, new ChessPiece('Q'));
 
         game.play();
     }

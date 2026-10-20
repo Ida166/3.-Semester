@@ -139,9 +139,9 @@ public class ChessPiece {
                         || Movements.isLegalVerticalMove(board, row, col, toRow, toCol, 1)
                         || Movements.isLegalDiagonalMove(board, row, col, toRow, toCol, 1);
             case "Queen":
-                return Movements.isLegalHorizontalMove(board, row, col, toRow, toCol, 7)
-                        || Movements.isLegalVerticalMove(board, row, col, toRow, toCol, 7)
-                        || Movements.isLegalDiagonalMove(board, row, col, toRow, toCol, 7);
+                //return Movements.isLegalHorizoqntalMove(board, row, col, toRow, toCol, 7)
+                        //|| Movements.isLegalVerticalMove(board, row, col, toRow, toCol, 7)
+                       // || Movements.isLegalDiagonalMove(board, row, col, toRow, toCol, 7);
             case "Rook":
                 return Movements.isLegalHorizontalMove(board, row, col, toRow, toCol, 7)
                         || Movements.isLegalVerticalMove(board, row, col, toRow, toCol, 7);

@@ -1,0 +1,39 @@
+Assignment 2, answers
+
+Question 1
+FestivalVolunteers keeps Oskar in position 2 of three arrays. Where does your program keep what it
+knows about Oskar, and how many objects for Oskar are there?
+- The festivalVolunteers array stores a reference to Oskar's Volunteer object.
+The volunteer object then stores the information name, points earned and number of festivals they have.
+There is one Volunteer object for Oskar.
+
+
+
+Question 2
+
+Which methods in your design can change a volunteer's points, and from which class is each of them
+called? Could Main.main give Oskar 100 points without a shift?
+- The changePoints() method in the Volunteer class changes a volunteer's points, and it is called by
+workedShift(), also in the Volunteer class. The workedShift() method is called by Festival, which
+passes it a Shift object. Main.main cannot directly give Oskar 100 points because the points field
+is private and changePoints() is private. Instead, points can only be changed through the process
+of working a shift.
+
+
+Question 3
+
+How does your program work out the points of a bar shift and of a recycling shift? Which method
+runs in each case, and how does Java choose it?
+- The different types of shifts extend the abstract Shift class, which declares the abstract
+method calculatePoints(). BarShift implements this method to award one point per hour, while
+RecyclingShift implements it to award one point per hour plus one point per bag collected.
+In Festival, a switch statement in addShift() determines which type of shift object to create.
+When shift.calculatePoints() is called, Java uses polymorphism to execute the overridden method
+belonging to the object's actual class, whether it is BarShift or RecyclingShift.
+
+Question 4
+
+Which classes did the leader shift make you write or change, and why? To add it to
+FestivalVolunteers.java instead, which methods would you change, and would anything warn
+you if you forgot one?
+-
