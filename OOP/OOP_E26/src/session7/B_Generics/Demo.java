@@ -41,10 +41,10 @@ public class Demo {
         // error: incompatible types: Book cannot be converted to Giraffe
 
         // GenericList holds Objects, like StackWithoutGenerics.
-        GenericList genericList = new GenericList();
+        GenericList<Giraffe> genericList = new GenericList();
         Giraffe giraffe = new Giraffe();
         genericList.add(giraffe);
-        Giraffe first = (Giraffe) genericList.get(0);       // get gives back an Object
+        Giraffe first = genericList.get(0);       // get gives back an Object
         System.out.println();
         System.out.println("GenericList, a giraffe added and element 0 read back:");
         System.out.println("  the same giraffe back: " + (first == giraffe));

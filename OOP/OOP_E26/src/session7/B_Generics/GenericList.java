@@ -9,19 +9,19 @@ package session7.B_Generics;
  * It holds Objects, so it takes an object of any class, and get gives back an
  * Object. The name says what it becomes in exercise B.
  */
-public class GenericList {
-    private Object[] array;
+public class GenericList<T> {
+    private T[] array;
     private int count = 0;
 
     public GenericList() {
-        array = new Object[100];
+        array = (T[]) new Object[100];
     }
 
-    public void add(Object o) {
+    public void add(T o) {
         array[count++] = o;
     }
 
-    public Object get(int i) {
+    public T get(int i) {
         return array[i];
     }
 }

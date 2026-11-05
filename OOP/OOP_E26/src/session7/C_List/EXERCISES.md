@@ -19,3 +19,4 @@ The exercise is the two numbered steps. The tips are there if you need them.
 
 1. `people` is built as a `LinkedList`. What would change in `Demo.java` if it were built as an
    `ArrayList`?
+    * You only need to replace new LinkedList<>() with new ArrayList<>() and change the import. The rest of Demo.java stays the same.

@@ -1,5 +1,7 @@
 package session7.A_ObjectMethods;
 
+import java.util.Objects;
+
 /**
  * A person with a first name, a last name, an age and, if there is one, a
  * middle name. This is the class of exercise A. It has the fields and the
@@ -29,5 +31,29 @@ public class Person {
         this.middleName = middleName;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if(this == other) return true;
+        if(other == null || getClass() != other.getClass()) {
+            return false;
+        }
+        //We typecast because the equals() method is defined to tak a perameter of type Object and therfore to
+        // access that specific objets methods we have to cast its original type. In this case Person
+        Person person = (Person) other;
+        return Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && age == person.age;
+    }
+
+    @Override
+    public int hashCode() { return Objects.hash(firstName, lastName, age); }
+
+    @Override
+    public String toString() {
+        if (middleName.isEmpty()) {
+            return firstName + " " + lastName + ", " + age;
+        } else {
+            return firstName + " " + middleName + " " + lastName + ", " + age;
+        }
     }
 }

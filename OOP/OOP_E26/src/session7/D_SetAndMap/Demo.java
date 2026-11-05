@@ -69,6 +69,11 @@ public class Demo {
 
         // --- EXERCISE D --------------------------------------------------
         // Card gets equals and hashCode. Then count the hand here, in a
-        // Map<Card, Integer>. See EXERCISES.md.
+         Map<Card, Integer> cardCount = new HashMap<>();
+         for (Card card : hand) {
+             int count  = cardCount.getOrDefault(card, 0);
+             cardCount.put(card, count + 1);
+         }
+         System.out.println("Ace of hearts appear: " + cardCount.get( new Card("Ace of Hearts")) + " times.");
     }
 }

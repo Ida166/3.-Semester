@@ -22,3 +22,4 @@ The exercise is the two numbered steps. The tips are there if you need them.
 
 1. Before your change, the `(Book)` line stopped the program while it ran. Now it does not compile.
    Who finds the mistake in each case, and when?
+    * Generics improve type safety because Java can detect type mismatches at compile time instead of waiting until runtime. Without Generics, an incorrect cast can cause a ClassCastException when the program runs. With Generics, Java prevents incompatible types from being used in the first place.

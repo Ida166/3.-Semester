@@ -38,6 +38,8 @@ public class Demo {
         hand.add("Ace of Hearts");
         hand.add("Two of Clubs");
 
+        //A Comparator is an object that tells java how to compare two objects when sorting.
+        //The syntax is sort(what to be sorted, how to sort it) Here alphabetical have the comparisons rules
         Comparator<String> alphabetical = new StringAlphabeticalOrder();
         Collections.sort(hand, alphabetical);
 
@@ -52,7 +54,8 @@ public class Demo {
         people.add(new Person("Mads", 28));
         people.add(new Person("Jakob", 21));
 
-        // Collections.sort(people, ...);   // exercise C
+        Comparator<Person> ageOrder = new AgeOrder();
+        Collections.sort(people, ageOrder);   // exercise C
 
         System.out.println();
         System.out.println("The people:");

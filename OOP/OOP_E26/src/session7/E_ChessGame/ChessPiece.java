@@ -2,6 +2,9 @@ package session7.E_ChessGame;
 
 import session7.E_ChessGame.rules.MoveRule;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A piece of the game, with its type and its colour. It holds the rules it
  * moves by, and ChessPiece.isLegalMove asks them. Each kind of piece is a
@@ -15,8 +18,9 @@ public abstract class ChessPiece {
     private int row = -1;
     private int col = -1;
     // The ways this piece may move, added one at a time by ChessPiece.addRule.
-    private MoveRule[] rules = new MoveRule[4];
-    private int ruleCount = 0;
+    List<MoveRule> rules =  new ArrayList<MoveRule>();
+//    private MoveRule[] rules = new MoveRule[4];
+//    private int ruleCount = 0;
 
     public ChessPiece(String type, String color) {
         this.type = type;
@@ -24,8 +28,7 @@ public abstract class ChessPiece {
     }
 
     protected final void addRule(MoveRule rule) {
-        rules[ruleCount] = rule;
-        ruleCount++;
+        rules.add(rule);
     }
 
     /**
@@ -38,8 +41,8 @@ public abstract class ChessPiece {
         if (target != null && target.isWhite() == isWhite()) {
             return false;
         }
-        for (int i = 0; i < ruleCount; i++) {
-            if (rules[i].allows(board, row, col, toRow, toCol)) {
+        for (int i = 0; i < rules.size(); i++) {
+            if (rules.get(i).allows(board, row, col, toRow, toCol)) {
                 return true;
             }
         }
@@ -85,5 +88,10 @@ public abstract class ChessPiece {
 
     protected void setCol(int col) {
         this.col = col;
+    }
+
+    @Override
+    public String toString() {
+        return color + " " + type;
     }
 }

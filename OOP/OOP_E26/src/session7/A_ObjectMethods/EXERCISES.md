@@ -4,6 +4,7 @@ The exercise is the two numbered steps. The tips are there if you need them.
 
 1. Read `Demo.main` and, before you run it, write down what you expect it to print. For the hash
    codes, predict only whether the two numbers are the same.
+    * They are
 2. Write `Person.equals`, `Person.hashCode` and `Person.toString`, each with `@Override`, as in
    `President.java`.
    - Two people are equal when they have the same first name, last name and age. The middle name
@@ -24,3 +25,4 @@ The exercise is the two numbered steps. The tips are there if you need them.
 ## Discussion
 
 1. What would `Demo` print for the two hash codes if `Person.hashCode` used the middle name too?
+    * They would be different as long as the middle names are different.

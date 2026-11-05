@@ -13,6 +13,7 @@ tips are there if you need them.
 ### Discussion
 
 1. What did the old `ChessPiece.addRule` do with a fifth rule?
+   * It could not save it in the array, and caused an ArrayIndexOutOfBoundsException.
 
 ## Exercise 2 — the captured pieces
 
@@ -47,3 +48,6 @@ tips are there if you need them.
 ### Discussion
 
 1. Which classes besides `ChessBoard` did you change? Why so few?
+   * No one beside `ChessBoard`, other than the new class Position created. I didn't need to change the other classes 
+   * because of abstraction and encapsulation. The other classes interact with the board through its existing methods, 
+   * such as getPieceAt() and movePiece(), without needing to know how the board stores its pieces internally

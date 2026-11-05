@@ -1,19 +1,22 @@
 package session7.E_ChessGame;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * The board, eight rows by eight columns, and the pieces on it. A square holds
  * at most one piece, and a piece on the board knows the square it stands on.
  */
 public class ChessBoard {
 
-    private ChessPiece[][] pieces = new ChessPiece[8][8];
+    Map<Position, ChessPiece> pieces = new HashMap<>();
 
     /** The piece on that square, or null for an empty square or a square off the board. */
     public ChessPiece getPieceAt(int row, int col) {
         if (!isOnBoard(row, col)) {
             return null;
         }
-        return pieces[row][col];
+        return pieces.get(new Position(row, col));
     }
 
     private static boolean isOnBoard(int row, int col) {
@@ -25,10 +28,10 @@ public class ChessBoard {
         if (!isOnBoard(row, col)) {
             return false;
         }
-        if (pieces[row][col] != null) {
+        if (pieces.get(new Position(row, col)) != null) {
             return false;
         }
-        pieces[row][col] = piece;
+        pieces.put(new Position(row, col), piece);
         piece.setRow(row);
         piece.setCol(col);
         return true;
@@ -47,7 +50,7 @@ public class ChessBoard {
         }
 
         // A piece may capture an enemy piece, but never one of its own.
-        ChessPiece target = pieces[toRow][toCol];
+        ChessPiece target = pieces.get(new Position(toRow, toCol));
         if (target != null && target.isWhite() == piece.isWhite()) {
             return false;
         }
@@ -56,8 +59,8 @@ public class ChessBoard {
             return false;
         }
 
-        pieces[piece.getRow()][piece.getCol()] = null;
-        pieces[toRow][toCol] = piece;   // a captured piece is overwritten
+        pieces.remove( new Position(piece.getRow(), piece.getCol()));
+        pieces.put(new Position(toRow, toCol), piece);   // a captured piece is over;written
         piece.setRow(toRow);
         piece.setCol(toCol);
         return true;
@@ -71,7 +74,7 @@ public class ChessBoard {
         for (int row = 0; row < 8; row++) {
             System.out.print("row " + row + " | ");
             for (int col = 0; col < 8; col++) {
-                ChessPiece piece = pieces[row][col];
+                ChessPiece piece = pieces.get(new Position(row, col));
                 if (piece == null) {
                     System.out.print(". ");
                 } else {

@@ -3,6 +3,9 @@ package session7.E_ChessGame;
 import session7.E_ChessGame.players.Move;
 import session7.E_ChessGame.players.Player;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * A game of mini-chess between two players. It has kings, queens, rooks,
  * bishops and knights, and no pawns. A piece captures by moving onto an enemy
@@ -15,7 +18,8 @@ public class ChessGame {
     private boolean whiteToMove = true;
     private Player white;
     private Player black;
-    private String winner;                // null while the game is running
+    private String winner;
+    List<ChessPiece> capturedPiece = new ArrayList<>(); // null while the game is running
 
     public ChessGame(Player white, Player black) {
         this.board = new ChessBoard();
@@ -87,6 +91,9 @@ public class ChessGame {
                 printBoard();
                 System.out.println();
                 System.out.println(winner + " wins: the other king is off the board.");
+
+                System.out.println("Captured: " + capturedPiece);
+
                 return;
             }
         }
@@ -142,6 +149,8 @@ public class ChessGame {
             if (target.getType().equals("King")) {
                 winner = piece.getColor();
             }
+            capturedPiece.add(target);
+
         } else {
             System.out.println(piece.getColor() + " " + piece.getType()
                     + " moves (" + fromRow + "," + fromCol + ") -> (" + toRow + "," + toCol + ")");
