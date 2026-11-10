@@ -1,0 +1,34 @@
+# Machine-readable facts about this session's exercises, read by AI
+# assistants together with the contract in /AGENTS.md. Students may read it
+# too — there is nothing secret here.
+id: session1-procedural-chess
+status: active            # active | closed — changed only by the teaching team
+type: practice            # demonstration | practice | assessed
+objectives:
+  - modify a working procedural program and measure what each change costs
+  - notice where knowledge about one piece is scattered across the program
+  - record the costs as written notes; the notes feed the final reflection
+not_yet_introduced:
+  - objects and classes as a design tool
+  - encapsulation
+  - constructors, instance fields and instance methods
+  - inheritance and interfaces
+  - polymorphism and dynamic dispatch
+  - enums
+  - exceptions
+  - collections and generics
+  - unit tests
+  - design patterns
+done_when:                # what a complete attempt shows; the tutor confirms against this, not against taste
+  exercise0: two extra moves added to main, one legal and one illegal, with the output predicted before running
+  exercise1: "movePiece(board, 7, 5, 5, 3) succeeds and the output reads `White Bishop moves (7,5) -> (5,3)`; the cost of the change (methods touched, of which switches) is written down"
+  exercise2: knights start on (0,1), (0,6), (7,1) and (7,6), move only in an L, jump over pieces, print as Knight; the cost is written down
+  exercise3: every legal move prints that piece's own counter; two rooks of one colour keep two separate counters; a captured piece's counter never shows up again, neither on the capturing piece nor on the next piece to land on that square; the queen and rook questions are answered from the program's output
+  exercise4: the two saboteur lines are uncommented, the second queen appears, and both Discuss answers are written down
+allowed_concepts:
+  - variables and types (int, char, boolean, String)
+  - 1D and 2D arrays
+  - if/else and switch
+  - for and while loops
+  - static methods, parameters and return values
+  - System.out.println and Scanner
