@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3912c796-e9c4-403a-a4a4-9dc916051544" name="Changes" comment="Initial commit of session 9 + solution to folder A, B, C">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/oop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/oop.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ida166&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ida166/3.-Semester.git&quot;,
+    &quot;accountId&quot;: &quot;a0c83f54-f1f8-45d1-89b2-7728bad08aac&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3LyJ19zsAjP6EYnIC12h2DPJ66S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.A_HelloChess.executor": "Run",
+    "Application.Demo.executor": "Run",
+    "Application.session2.A_ClassesAndObjects.Demo.executor": "Run",
+    "Application.session9.B_CustomExceptions.Demo.executor": "Run",
+    "Application.session9.C_Enums.Demo.executor": "Run",
+    "Application.session9.D_ChessGame.Demo.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BankAccountTest (1).executor": "Run",
+    "JUnit.BankAccountTest.executor": "Run",
+    "JUnit.BankAccountTest.largeDeposit.executor": "Run",
+    "JUnit.BankAccountTest.openAccount.executor": "Run",
+    "JUnit.BankAccountTest.withdraw01.executor": "Run",
+    "JUnit.CentaurTest.executor": "Run",
+    "JUnit.ChessBoardTest.executor": "Run",
+    "JUnit.ChessPieceTest.executor": "Run",
+    "JUnit.session9.A_ThrowAndCatch in oop.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/IdaJakobsen/OneDrive - OptimumIT/Desktop/oop",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\IdaJakobsen\OneDrive - OptimumIT\Desktop\oop\OOP\OOP_E26\test" />
+      <recent name="C:\Users\IdaJakobsen\OneDrive - OptimumIT\Desktop\oop\OOP\OOP_E26\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ChessPieceTest">
+    <configuration name="BankAccountTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session9.B_CustomExceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session9.B_CustomExceptions" />
+      <option name="MAIN_CLASS_NAME" value="session9.B_CustomExceptions.BankAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountTest.largeDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session9.B_CustomExceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session9.B_CustomExceptions" />
+      <option name="MAIN_CLASS_NAME" value="session9.B_CustomExceptions.BankAccountTest" />
+      <option name="METHOD_NAME" value="largeDeposit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CentaurTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session9.D_ChessGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session9.D_ChessGame" />
+      <option name="MAIN_CLASS_NAME" value="session9.D_ChessGame.CentaurTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChessBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session9.D_ChessGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session9.D_ChessGame" />
+      <option name="MAIN_CLASS_NAME" value="session9.D_ChessGame.ChessBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChessPieceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="session9.D_ChessGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="session9.D_ChessGame" />
+      <option name="MAIN_CLASS_NAME" value="session9.D_ChessGame.ChessPieceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ChessPieceTest" />
+        <item itemvalue="JUnit.ChessBoardTest" />
+        <item itemvalue="JUnit.CentaurTest" />
+        <item itemvalue="JUnit.BankAccountTest.largeDeposit" />
+        <item itemvalue="JUnit.BankAccountTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3912c796-e9c4-403a-a4a4-9dc916051544" name="Changes" comment="" />
+      <created>1794420157900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1794420157900</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Session 9 - initial commit">
+      <option name="closed" value="true" />
+      <created>1794420410328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1794420410328</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit of session 9 + solution to folder A, B, C">
+      <option name="closed" value="true" />
+      <created>1794469667526</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1794469667526</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="c7ce4c17-b624-443b-b26d-4d7699105bbd" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="c7ce4c17-b624-443b-b26d-4d7699105bbd">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Session 9 - initial commit" />
+    <MESSAGE value="Initial commit of session 9 + solution to folder A, B, C" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of session 9 + solution to folder A, B, C" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/OOP/OOP_E26/src/session9/A_ThrowAndCatch/Demo.java</url>
+          <line>9</line>
+          <properties class="session9.A_ThrowAndCatch.Demo" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
