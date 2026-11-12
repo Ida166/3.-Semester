@@ -24,12 +24,12 @@ public class Demo {
         Planet planet = Planet.EARTH;
         System.out.println(planet + " is planet number " + planet.getPosition());
 
-        TeamPlayer mia = new TeamPlayer("Mia", "Blue");
-        TeamPlayer jonas = new TeamPlayer("Jonas", "blue");
-        System.out.println(mia + " and " + jonas);
-        System.out.println("Same team: " + mia.isOnSameTeamAs(jonas));
-
         // --- EXERCISE C --------------------------------------------------
         // Give TeamPlayer a team of type Team. See EXERCISES.md.
+
+        TeamPlayer mia = new TeamPlayer("Mia", Team.BLUE);
+        TeamPlayer jonas = new TeamPlayer("Jonas", Team.BLUE);
+        System.out.println(mia + " and " + jonas);
+        System.out.println("Same team: " + mia.isOnSameTeamAs(jonas));
     }
 }

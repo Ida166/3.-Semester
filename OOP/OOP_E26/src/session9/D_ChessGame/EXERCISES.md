@@ -12,7 +12,7 @@ numbered steps. The tips are there if you need them.
 
    You are done when the ten tests are green and `Demo` prints a line such as
    `WHITE wins: the other king is off the board.`
-
+   
 ### Tips
 
 - Change the constructor of `ChessPiece`, `ChessPiece.isWhite` and `Player.chooseMove` first.
@@ -22,6 +22,7 @@ numbered steps. The tips are there if you need them.
 ### Discussion
 
 1. In session 8, `new Rook("white")` made a black rook. What happens to that line now?
+   * Now Java checks the type at compile time, so you cannot accidentally pass an invalid colour.
 
 ## Exercise 2 — the type as an enum
 

@@ -8,7 +8,7 @@ import session9.D_ChessGame.rules.LShape;
  */
 public class Knight extends ChessPiece {
 
-    public Knight(String color) {
+    public Knight(Color color) {
         super("Knight", color);
         addRule(new LShape());
     }

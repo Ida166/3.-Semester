@@ -24,5 +24,13 @@ public class Demo {
 
         // --- EXERCISE A --------------------------------------------------
         // Deposit -50 here, inside a try. See EXERCISES.md.
+        try {
+            account.deposit(-50);
+            System.out.println("Deposetid -50");
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println("Something went wrong: " + e.getMessage());
+        }
     }
 }
+

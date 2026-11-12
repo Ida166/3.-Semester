@@ -8,7 +8,7 @@ import session9.D_ChessGame.rules.Diagonal;
  */
 public class Bishop extends ChessPiece {
 
-    public Bishop(String color) {
+    public Bishop(Color color) {
         super("Bishop", color);
         addRule(new Diagonal(7));
     }

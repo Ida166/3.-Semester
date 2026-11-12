@@ -18,7 +18,7 @@ public class ChessGame {
     private boolean whiteToMove = true;
     private Player white;
     private Player black;
-    private String winner;                // null while the game is running
+    private Color winner;                // null while the game is running
     private List<ChessPiece> captured = new ArrayList<>();
 
     public ChessGame(Player white, Player black) {
@@ -34,24 +34,24 @@ public class ChessGame {
 
     private void setupPieces() {
         // Black pieces, top of the board.
-        board.placePiece(0, 0, new Rook("Black"));
-        board.placePiece(0, 1, new Knight("Black"));
-        board.placePiece(0, 2, new Bishop("Black"));
-        board.placePiece(0, 3, new Queen("Black"));
-        board.placePiece(0, 4, new King("Black"));
-        board.placePiece(0, 5, new Bishop("Black"));
-        board.placePiece(0, 6, new Knight("Black"));
-        board.placePiece(0, 7, new Rook("Black"));
+        board.placePiece(0, 0, new Rook(Color.BLACK));
+        board.placePiece(0, 1, new Knight(Color.BLACK));
+        board.placePiece(0, 2, new Bishop(Color.BLACK));
+        board.placePiece(0, 3, new Queen(Color.BLACK));
+        board.placePiece(0, 4, new King(Color.BLACK));
+        board.placePiece(0, 5, new Bishop(Color.BLACK));
+        board.placePiece(0, 6, new Knight(Color.BLACK));
+        board.placePiece(0, 7, new Rook(Color.BLACK));
 
         // White pieces, bottom of the board.
-        board.placePiece(7, 0, new Rook("White"));
-        board.placePiece(7, 1, new Knight("White"));
-        board.placePiece(7, 2, new Bishop("White"));
-        board.placePiece(7, 3, new Queen("White"));
-        board.placePiece(7, 4, new King("White"));
-        board.placePiece(7, 5, new Bishop("White"));
-        board.placePiece(7, 6, new Knight("White"));
-        board.placePiece(7, 7, new Rook("White"));
+        board.placePiece(7, 0, new Rook(Color.WHITE));
+        board.placePiece(7, 1, new Knight(Color.WHITE));
+        board.placePiece(7, 2, new Bishop(Color.WHITE));
+        board.placePiece(7, 3, new Queen(Color.WHITE));
+        board.placePiece(7, 4, new King(Color.WHITE));
+        board.placePiece(7, 5, new Bishop(Color.WHITE));
+        board.placePiece(7, 6, new Knight(Color.WHITE));
+        board.placePiece(7, 7, new Rook(Color.WHITE));
     }
 
     public void printBoard() {
@@ -67,13 +67,13 @@ public class ChessGame {
                 printBoard();
             }
 
-            String color;
+            Color color;
             Player current;
             if (whiteToMove) {
-                color = "White";
+                color = Color.WHITE;
                 current = white;
             } else {
-                color = "Black";
+                color = Color.BLACK;
                 current = black;
             }
 

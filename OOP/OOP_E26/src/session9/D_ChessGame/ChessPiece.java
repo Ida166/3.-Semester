@@ -14,13 +14,13 @@ import java.util.List;
 public abstract class ChessPiece {
 
     private String type;        // "King", "Queen", "Rook", "Bishop", "Knight" or "Centaur"
-    private String color;       // "White" or "Black"
+    private Color color;       // "White" or "Black"
     private int row = -1;
     private int col = -1;
     // The ways this piece may move, added one at a time by ChessPiece.addRule.
     private List<MoveRule> rules = new ArrayList<>();
 
-    public ChessPiece(String type, String color) {
+    public ChessPiece(String type, Color color) {
         this.type = type;
         this.color = color;
     }
@@ -51,7 +51,7 @@ public abstract class ChessPiece {
         return type;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
@@ -64,7 +64,7 @@ public abstract class ChessPiece {
     }
 
     public boolean isWhite() {
-        return color.equals("White");
+        return color == Color.WHITE; //Color.WHITE refers to the WHITE enum constant
     }
 
     /** The piece as its colour and its type, such as Black Rook. */

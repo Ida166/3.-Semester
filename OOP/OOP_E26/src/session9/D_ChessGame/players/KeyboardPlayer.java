@@ -1,6 +1,7 @@
 package session9.D_ChessGame.players;
 
 import session9.D_ChessGame.ChessBoard;
+import session9.D_ChessGame.Color;
 
 import java.util.Scanner;
 
@@ -14,7 +15,7 @@ public class KeyboardPlayer implements Player {
     private Scanner keyboard = new Scanner(System.in);
 
     @Override
-    public Move chooseMove(ChessBoard board, String color) {
+    public Move chooseMove(ChessBoard board, Color color) {
         while (true) {
             System.out.println(color + " to move. Type the square of the piece and the square it goes to,");
             System.out.println("as four numbers: fromRow fromCol toRow toCol   (for example: 7 3 4 3). Type q to quit.");

@@ -18,3 +18,9 @@ The exercise is the two numbered steps. The tips are there if you need them.
 
 1. `TeamPlayer.isOnSameTeamAs` can now compare the two teams with `==`. Why is that safe for an
    enum, when it was not for two `String`s? (Chapter 12, "Enumeration Fundamentals".)
+   * When creating two Strings with the same content, they do not necessarily point to the same object in memory. 
+   * Therefore, using == to compare Strings is unsafe because it checks whether they reference the same object rather 
+   * than whether they contain the same text. Instead, we use .equals() to compare their content.
+
+   * Enums are different because Java only creates one instance of each enum constant. This means that Team.BLUE always 
+   * refers to the same object in memory, making == safe for comparing enum values.

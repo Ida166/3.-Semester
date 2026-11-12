@@ -10,7 +10,7 @@ import session9.D_ChessGame.rules.StraightLine;
  */
 public class Centaur extends ChessPiece {
 
-    public Centaur(String color) {
+    public Centaur(Color color) {
         super("Centaur", color);
         addRule(new StraightLine(1));
         addRule(new Diagonal(1));

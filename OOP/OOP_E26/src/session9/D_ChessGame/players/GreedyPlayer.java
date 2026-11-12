@@ -2,6 +2,7 @@ package session9.D_ChessGame.players;
 
 import session9.D_ChessGame.ChessBoard;
 import session9.D_ChessGame.ChessPiece;
+import session9.D_ChessGame.Color;
 
 /**
  * A CapturePlayer that takes the most valuable enemy piece it can reach. It
@@ -11,7 +12,7 @@ import session9.D_ChessGame.ChessPiece;
 public class GreedyPlayer extends CapturePlayer {
 
     @Override
-    public Move chooseMove(ChessBoard board, String color) {
+    public Move chooseMove(ChessBoard board, Color color) {
         Move best = null;
         int bestValue = 0;
 

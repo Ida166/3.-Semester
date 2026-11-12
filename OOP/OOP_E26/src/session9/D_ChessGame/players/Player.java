@@ -1,7 +1,7 @@
 package session9.D_ChessGame.players;
 
 import session9.D_ChessGame.ChessBoard;
-
+import session9.D_ChessGame.Color;
 /**
  * Something that can choose a move. ChessGame calls Player.chooseMove when it
  * is this player's turn, with the board as it stands and the player's colour.
@@ -10,5 +10,5 @@ import session9.D_ChessGame.ChessBoard;
  */
 public interface Player {
 
-    Move chooseMove(ChessBoard board, String color);
+    Move chooseMove(ChessBoard board, Color color);
 }

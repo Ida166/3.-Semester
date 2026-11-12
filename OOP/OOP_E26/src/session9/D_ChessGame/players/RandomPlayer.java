@@ -2,6 +2,7 @@ package session9.D_ChessGame.players;
 
 import session9.D_ChessGame.ChessBoard;
 import session9.D_ChessGame.ChessPiece;
+import session9.D_ChessGame.Color;
 
 import java.util.Random;
 
@@ -16,13 +17,13 @@ public class RandomPlayer implements Player {
 
     /** Returns null when many tries find no move at all. */
     @Override
-    public Move chooseMove(ChessBoard board, String color) {
+    public Move chooseMove(ChessBoard board, Color color) {
         for (int attempt = 0; attempt < 500; attempt++) {
             int fromRow = random.nextInt(8);
             int fromCol = random.nextInt(8);
 
             ChessPiece piece = board.getPieceAt(fromRow, fromCol);
-            if (piece == null || !piece.getColor().equals(color)) {
+            if (piece == null || piece.getColor() != color) {
                 continue;               // an empty square, or not one of mine
             }
 

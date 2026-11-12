@@ -29,6 +29,10 @@ public class BankAccount {
     }
 
     public void deposit(int amount) {
+
+        if(amount > 100000){
+            throw new LargeDepositException(amount);
+        }
         balance = balance + amount;
     }
 }

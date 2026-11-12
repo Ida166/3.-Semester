@@ -2,6 +2,7 @@ package session9.D_ChessGame.players;
 
 import session9.D_ChessGame.ChessBoard;
 import session9.D_ChessGame.ChessPiece;
+import session9.D_ChessGame.Color;
 
 /**
  * A RandomPlayer that takes an enemy piece when it finds one. It asks
@@ -11,7 +12,7 @@ import session9.D_ChessGame.ChessPiece;
 public class CapturePlayer extends RandomPlayer {
 
     @Override
-    public Move chooseMove(ChessBoard board, String color) {
+    public Move chooseMove(ChessBoard board, Color color) {
         Move move = null;
         for (int attempt = 0; attempt < 100; attempt++) {
             move = super.chooseMove(board, color);

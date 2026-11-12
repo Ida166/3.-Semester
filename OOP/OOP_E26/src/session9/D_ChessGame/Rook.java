@@ -8,7 +8,7 @@ import session9.D_ChessGame.rules.StraightLine;
  */
 public class Rook extends ChessPiece {
 
-    public Rook(String color) {
+    public Rook(Color color) {
         super("Rook", color);
         addRule(new StraightLine(7));
     }

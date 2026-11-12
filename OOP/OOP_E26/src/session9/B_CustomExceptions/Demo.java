@@ -9,7 +9,7 @@ public class Demo {
 
     public static void main(String[] args) {
         BankAccount account = new BankAccount(100);
-        int[] amounts = {-10, 1000, 30};
+        int[] amounts = {10, 1000, 30};
 
         for (int amount : amounts) {
             try {
@@ -26,5 +26,11 @@ public class Demo {
 
         // --- EXERCISE B --------------------------------------------------
         // Deposit 250 000 here, inside a try. See EXERCISES.md.
+        try {
+            account.deposit(250000);
+            System.out.println("Deposited 250000");
+        } catch (LargeDepositException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

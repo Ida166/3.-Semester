@@ -20,3 +20,4 @@ The exercise is the two numbered steps. The tips are there if you need them.
 
 1. `BankAccount.withdraw` could print its message and return, instead of throwing. What would
    `Demo` print then for the withdrawal of 500?
+   * Then it would both prints its error message and the continued messagde where it is displayed that the 500 were withdrevn, which is wrong

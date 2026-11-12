@@ -9,7 +9,7 @@ import session9.D_ChessGame.rules.StraightLine;
  */
 public class King extends ChessPiece {
 
-    public King(String color) {
+    public King(Color color) {
         super("King", color);
         addRule(new StraightLine(1));
         addRule(new Diagonal(1));

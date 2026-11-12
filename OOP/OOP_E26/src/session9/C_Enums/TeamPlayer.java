@@ -7,15 +7,15 @@ package session9.C_Enums;
 public class TeamPlayer {
 
     private String name;
-    private String team;
+    private Team team;
 
-    public TeamPlayer(String name, String team) {
+    public TeamPlayer(String name, Team team) {
         this.name = name;
         this.team = team;
     }
 
     public boolean isOnSameTeamAs(TeamPlayer other) {
-        return team.equals(other.team);
+        return team == other.team;
     }
 
     @Override
