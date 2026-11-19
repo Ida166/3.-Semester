@@ -1,5 +1,7 @@
 package Assignment2.Shifts;
 
+import Assignment2.Volunteer;
+
 public class RecyclingShift extends Shift {
 
     protected int bags;
@@ -10,7 +12,7 @@ public class RecyclingShift extends Shift {
     }
 
     @Override
-    public int calculatePoints() {
+    public int calculatePoints(Volunteer volunteer) {
         return getHours() + bags;
     }
 

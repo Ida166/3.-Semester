@@ -1,5 +1,7 @@
 package Assignment2.Shifts;
 
+import Assignment2.Volunteer;
+
 public abstract class Shift {
 
     private int hours;
@@ -14,7 +16,7 @@ public abstract class Shift {
 
     public String getTask() { return task; }
 
-    public abstract int calculatePoints();
+    public abstract int calculatePoints(Volunteer volunteer);
 
     public abstract String pointPerShift();
 

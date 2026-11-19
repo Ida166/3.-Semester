@@ -1,5 +1,7 @@
 package Assignment2.Shifts;
 
+import Assignment2.Volunteer;
+
 public class BarShift extends Shift{
 
     public BarShift ( int hours, String task ) {
@@ -7,7 +9,7 @@ public class BarShift extends Shift{
     }
 
     @Override
-    public int calculatePoints() {
+    public int calculatePoints(Volunteer volunteer) {
         return getHours();
     }
 

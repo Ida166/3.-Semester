@@ -1,7 +1,8 @@
 package Assignment2;
 
 import Assignment2.Shifts.BarShift;
-import Assignment2.Shifts.Shift;
+import Assignment2.Shifts.RecyclingShift;
+import Assignment2.Shifts.TeamLeadersShift;
 
 /**
  * Assignment 2, your program. Write it with objects.
@@ -28,10 +29,10 @@ public class Main {
         // Read Task 2 in FestivalVolunteers.main, then write it here with your objects.
         System.out.println("Task 2. Day 1, the bars");
 
-        festival.addShift('B', 0, 8, "Beer bar", 0);
-        festival.addShift('B', 1, 8, "Cocktail bar", 0);
-        festival.addShift('B', 2, 8, "Beer bar", 0);
-        festival.addShift('B', 2, 8, "Coffee bar", 0);
+        festival.addShift(0, new BarShift(8, "Beer bar"));
+        festival.addShift(1, new BarShift(8, "Cocktail bar"));
+        festival.addShift(2, new BarShift(8, "Beer bar"));
+        festival.addShift(2, new BarShift(8, "Coffee bar"));
         festival.printPoints();
 
 
@@ -40,16 +41,16 @@ public class Main {
         // Read Task 3 in FestivalVolunteers.main, then write it here with your objects.
         System.out.println("Task 3. Day 2, cup recycling");
 
-        festival.addShift('R', 0, 8, "Cup recycling", 2);
-        festival.addShift('R', 1, 8, "Cup recycling", 6);
-        festival.addShift('R', 2, 8, "Cup recycling", 4);
+        festival.addShift(0, new RecyclingShift(8, "Cup recycling", 2));
+        festival.addShift(1, new RecyclingShift(8, "Cup recycling", 6));
+        festival.addShift(2, new RecyclingShift(8, "Cup recycling", 4));
         festival.printPoints();
 
         // Task 4. Day 3, the team leaders. Exercise 4.
         // FestivalVolunteers does not have this task. Exercise 4 in README.md describes it.
         System.out.println("Task 4. Day 3, the team leaders");
-        festival.addShift('L', 0, 8, "Bar team leader", 0);
-        festival.addShift('L', 1, 4, "Recycling team leader", 0);
+        festival.addShift(0, new TeamLeadersShift(8, "Bar team leader"));
+        festival.addShift(1, new TeamLeadersShift(4, "Recycling team leader"));
         festival.printPoints();
     }
 }

@@ -1,23 +1,19 @@
 package Assignment2.Shifts;
 
+import Assignment2.Volunteer;
+
 public class TeamLeadersShift extends Shift{
 
-    int festivalsBefore;
-
-    public TeamLeadersShift(int hours, String task, int festivalsBefore) {
+    public TeamLeadersShift(int hours, String task) {
         super(hours, task);
-        this.festivalsBefore = festivalsBefore;
     }
 
     @Override
-    public int calculatePoints() {
-
-        if(festivalsBefore >= 3){
+    public int calculatePoints(Volunteer volunteer) {
+        if (volunteer.getFestivalsBefore() >= 3) {
             return getHours() * 3;
         }
-        else{
-            return getHours() * 2;
-        }
+        return getHours() * 2;
     }
 
     @Override

@@ -23,7 +23,7 @@ public class Volunteer {
     }
 
     public int workedShift(Shift shift ){
-        int earned = shift.calculatePoints();
+        int earned = shift.calculatePoints(this);
         changePoints(earned);
         return earned;
     }
