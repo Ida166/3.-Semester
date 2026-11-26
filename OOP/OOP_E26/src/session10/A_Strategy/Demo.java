@@ -7,17 +7,25 @@ package session10.A_Strategy;
 public class Demo {
 
     public static void main(String[] args) {
-        BankAccount savings = new BankAccount(1000, new SavingsAccountInterest());
-        BankAccount checking = new BankAccount(1000, new CheckingAccountInterest());
+        BankAccount savings = new BankAccount(1000, new SavingsAccountInterest(), new SavingsAccountFee());
+        BankAccount checking = new BankAccount(1000, new CheckingAccountInterest(), new CheckingAccountFee());
 
         savings.accrueInterest();
         checking.accrueInterest();
 
+        System.out.println("After applying interrest");
         System.out.println("Savings: " + savings.getBalance());
         System.out.println("Checking: " + checking.getBalance());
 
         // --- EXERCISE A --------------------------------------------------
         // See EXERCISES.md. Apply the fee to both accounts here, and print
         // the two balances again.
+
+        System.out.println("After applying fee");
+        savings.applyFee();
+        checking.applyFee();
+        System.out.println("Savings: " + savings.getBalance());
+        System.out.println("Checking: " + checking.getBalance());
+
     }
 }

@@ -9,10 +9,12 @@ public class BankAccount {
 
     private double balance;
     private InterestStrategy interestStrategy;
+    private AccountFeeStrategy accountFeeStrategy;
 
-    public BankAccount(double balance, InterestStrategy interestStrategy) {
+    public BankAccount(double balance, InterestStrategy interestStrategy, AccountFeeStrategy accountFeeStrategy) {
         this.balance = balance;
         this.interestStrategy = interestStrategy;
+        this.accountFeeStrategy = accountFeeStrategy;
     }
 
     public double getBalance() {
@@ -30,4 +32,6 @@ public class BankAccount {
     public void accrueInterest() {
         this.balance = this.balance + interestStrategy.calculateInterest(this.balance);
     }
+
+    public void applyFee() { this.balance = this.balance + accountFeeStrategy.calculateFee(); }
 }
